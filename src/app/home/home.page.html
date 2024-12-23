@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Figuras Geométricas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Seleccione una Figura</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Figura Geométrica</ion-label>
+        <ion-select placeholder="Seleccione" (ionChange)="navigateToFigure($event)">
+          <ion-select-option value="circulo">Círculo</ion-select-option>
+          <ion-select-option value="triangulo">Triángulo</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
